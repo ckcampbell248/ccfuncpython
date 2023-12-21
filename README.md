@@ -1,4 +1,4 @@
-### Python Azure Function
+### Python Azure Functions App
 This Azure Functions project uses the Azure Functions v2 runtime and Python 3.11. 
 
 #### Functions include:
