@@ -1,7 +1,10 @@
 import azure.functions as func
 import logging
+from cycle_times_blueprint import cycle_times_blueprint
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
+
+app.register_functions(cycle_times_blueprint)
 
 # HTTP Trigger function - Hello World example
 @app.route(route="httpHelloWorld")
