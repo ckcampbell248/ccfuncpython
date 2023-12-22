@@ -3,7 +3,6 @@ import logging
 
 cycle_times_blueprint = func.Blueprint()
 
-
 @cycle_times_blueprint.timer_trigger(schedule="*/1 * * * * *", arg_name="myTimer", run_on_startup=True,
               use_monitor=False) 
 def timerCycleTimeSimulator(myTimer: func.TimerRequest) -> None:

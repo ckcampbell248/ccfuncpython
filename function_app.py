@@ -1,10 +1,12 @@
 import azure.functions as func
 import logging
 from cycle_times_blueprint import cycle_times_blueprint
+from iot_hub_trigger import iot_hub_trigger
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 app.register_functions(cycle_times_blueprint)
+app.register_functions(iot_hub_trigger)
 
 # HTTP Trigger function - Hello World example
 @app.route(route="httpHelloWorld")

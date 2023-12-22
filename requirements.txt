@@ -4,4 +4,6 @@
 
 azure-functions
 azure-iot-device
+azure-identity
+azure-digitaltwins-core
 pyodbc

@@ -9,3 +9,6 @@ This Azure Functions project uses the Azure Functions v2 runtime and Python 3.11
 
 ##### **cycle_times_blueprint.py**: 
 - *timerCycleTimeSimulator*: A timer trigger function that simulates start and stop events for a manufacturing process. The function writes the events to an Azure IoT Hub. 
+
+##### **iot_hub_trigger.py**: 
+- *iothubUpdateTwins*: This function is triggered by IoT Hub (Event Hub) events. If the messages contain telemetry data from the MX Chip, it updates the digital twin model. 
